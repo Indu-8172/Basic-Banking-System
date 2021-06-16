@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View All Customers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="banking.css" rel="stylesheet">
+</head>
+
+<body style="text-align:center;">
+
+                    <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg">
+                      <a class="navbar-brand margin text-color brand" href="#">
+            <img src="https://cdn5.vectorstock.com/i/1000x1000/26/24/bank-icon-blue-vector-20842624.jpg" width="50" height="50"  alt="logo">
+            Spark's Bank
+                      </a>
+
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav header">
+                            <a class="nav-item nav-link margin text-color" href="C:\xampp\htdocs\cwh\basic_banking.html">Home</a>
+                              <a class="nav-item nav-link margin  text-color" href="View_all_customers.html">View All Customers</a>
+                              <a class="nav-item nav-link margin text-color" href="transfer_money.html">Transfer Money</a>
+                              <a class="nav-item nav-link margin text-color" href="transaction_history.html">Transaction History</a>
+                          <a class="nav-item nav-link margin text-color" href="about.html">About Us</a>
+                        </div>
+                      </div>
+                    </nav>
+                </div>
+
+
+<h1>Welcome!</h1>
+<h3>All the customer's information is available here</h3>
+    <div class="my-info text-center money">
+       <button class="btn btn-info" data-toggle="modal" data-target="#sendMoney"><a class="decor" style = "color:white;" href="transfer_money.html">Send Money</a></button>
+    </div>
+
+    <!-- Modal send money 
+    <form action = "/" method = "POST">
+    <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="text" id="enterSName" class="form-control" placeholder="Sender's username" aria-label="Sender's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@email.com</span>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" id="enterName" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@email.com</span>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Rs</span>
+                            </div>
+                            <input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount" aria-label="Amount">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="sending" class="btn btn-success" data-dismiss="modal">Send
+                    Money</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+-->
+<div class="align">
+    <table id="myTable">
+        <tr>
+            <th>Customer Name</th>
+            <th>Account Number</th>
+            <th>Citizenship</th>
+            <th>Email Id</th>
+            <th>Contact Number</th>
+            <th>Current Balance</th>
+            </tr>
+            <tr>
+                <td>John Wick</td>
+                    <td>234567894523</td>
+                        <td>US</td>
+                            <td>John.wick231@gmail.com</td>
+                                <td>+12349876545</td>
+                                    <td><p id ="JohnBalance">35000</p></td>
+                </tr>
+                <tr>
+                    <td>Jessica Harrish</td>
+                        <td>239567473882</td>
+                            <td>US</td>
+                                <td>jessicaHarrish6573@gmail.com</td>
+                                    <td>+12567451298</td>
+                                        <td id="JessicaBalance">25000</td>
+                    </tr>
+                    <tr>
+                        <td>Indu Sharma</td>
+                            <td>547882934986</td>
+                                <td>Indian</td>
+                                    <td>indu.sharma.8172@gmail.com</td>
+                                        <td>+919867342367</td>
+                                            <td id="InduBalance">40000</td>
+                        </tr>
+                        <tr>
+                        <td>Ashu Kumar</td>
+                                <td>354847388212</td>
+                                    <td>Indian</td>
+                                        <td>kumar.ashu7310@gmail.com</td>
+                                            <td>+919356785129</td>
+                                                <td id="AshuBalance">55000</td>
+                            </tr>
+                            <tr>
+                                <td>Scott Machall</td>
+                                    <td>455667878923</td>
+                                        <td>Spainish</td>
+                                            <td>scott.machall123@gmail.com</td>
+                                                <td>+17866453312</td>
+                                                    <td id="ScottBalance">5000</td>
+                                </tr>
+                                <tr>
+                                    <td>Lydia Martin</td>
+                                        <td>785875484526</td>
+                                            <td>US</td>
+                                                <td>lydia.martin567@gmail.com</td>
+                                                    <td>+19653412456</td>
+                                                        <td id="LydiaBalance">34000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Liam Aden</td>
+                                            <td>546344567845</td>
+                                                <td>Spanish</td>
+                                                    <td>liamAden7685@gmail.com</td>
+                                                        <td>+13456788945</td>
+                                                            <td id="LiamBalance">4000</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Himanshi Sharma</td>
+                                                <td>564738291234</td>
+                                                    <td>Indian</td>
+                                                        <td>himanshi.sharma.234@gmail.com</td>
+                                                            <td>+917310675543</td>
+                                                                <td id="HimanshiBalance">20000</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Akash Rana</td>
+                                                    <td>456372819564</td>
+                                                        <td>Indian</td>
+                                                            <td>akkiRana8974@gmail.com</td>
+                                                                <td>+918126563421</td>
+                                                                    <td id="AkkiBalance">4000</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Jackson Dong</td>
+                                                        <td>435678906543</td>
+                                                                <td>US</td>
+                                                                <td>jacksonDong.7865@gmail.com</td>
+                                                                    <td>+14534231876</td>
+                                                                        <td><p id="JacksonBalance">20000</p></td>
+                                                    </tr>
+        </table>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="banking.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+</body>
+</html>

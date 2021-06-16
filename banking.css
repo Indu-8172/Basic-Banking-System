@@ -1,0 +1,82 @@
+body{
+    background-image:url("https://www.rhbgroup.com/~/media/images/malaysia/product-and-services/whats-new/bg.ashx?h=1050&la=en&w=1680");
+    background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+    text-align:center;
+}
+.margin{
+    margin:0 10px;
+}
+.text-color{
+    color:#37404a;
+    font-weight:bold;
+}
+a:hover{
+    color:#292a2b;
+}
+.brand{
+    font-size:30px;
+margin-top:10px;
+}
+.header{
+margin-top:20px;
+padding-left:30%;
+}
+
+
+/* second section*/
+
+.space{
+  padding-top:160px;
+}
+.decor:hover{
+    text-decoration:none;
+}
+.price{
+    margin:30px auto 30px auto;
+}
+
+.col{
+    margin:30px auto 30px auto;
+    color:#474d52;
+}
+.col_space{
+    font-weight:normal;
+    margin:4px auto 4px auto;
+    font-size:1rem;
+    color:#474d52;
+}
+.color{
+    background-color:#78a6ad;
+}
+
+/*view all customers*/
+
+
+table,th,td{
+    border: 2px solid black;
+}
+th, td {
+  padding: 15px;
+}
+th{
+    background-color:grey;
+}
+.align{
+    margin:100px 270px;
+}
+.color1{
+    color:black;
+
+}
+.form{
+margin: 10% 20% 10% 20%;
+}
+.bold{
+    font-weight:bold;
+}
+
+.money{
+    margin:20px auto 20px auto;
+}
